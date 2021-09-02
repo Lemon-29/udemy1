@@ -10,10 +10,16 @@
     </tr>
   </thead>
   <tbody>
-   <% @questions.each do |question| %>
-    <tr>
-     <td><%= question.id %></td>
-     <td><%= question.title %></td>
-     <td>[Edit][Delate]</td>
-   <% end %>
+    <% @questions.each do |question| %>
+      <tr>
+      <td><%= question.id %></td>
+      <td><%= question.title %></td>
+      <td>[Edit][Delate]</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+  <div>
+  <%= link_to 'New question', new_question_path  %>
+  </div>
 </div>
