@@ -31,7 +31,7 @@
           <%= answer.name %>
          </td>
          <td>
-          [edit][delete]
+          [<%= link_to 'Edit', edit_question_answer_path(@question, answer)%>][delete]
          </td>
         </tr>
       <% end %>
